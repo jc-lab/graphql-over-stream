@@ -3,7 +3,7 @@ plugins {
 }
 
 group = "kr.jclab.graphql"
-version = "1.0-SNAPSHOT"
+version = Version.PROJECT
 
 repositories {
     mavenCentral()
