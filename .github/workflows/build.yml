@@ -21,7 +21,7 @@ jobs:
         run: |
           cd java
           chmod +x gradlew
-          ./gradlew build test
+          ./gradlew build test --no-daemon
   node-build:
     runs-on: ubuntu-latest
     strategy:
