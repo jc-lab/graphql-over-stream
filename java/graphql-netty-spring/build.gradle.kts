@@ -4,9 +4,6 @@ plugins {
     `signing`
 }
 
-group = "kr.jclab.graphql"
-version = "0.0.3-SNAPSHOT"
-
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8
