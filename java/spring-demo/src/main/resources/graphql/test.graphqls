@@ -1,0 +1,21 @@
+input TestInput {
+    name: String
+}
+
+type TestOutput {
+    id: String!
+    name: String
+}
+
+type Query {
+    testList: [TestOutput]!
+    testGet(id: String!): TestOutput
+}
+
+type Mutation {
+    testAdd(input: TestInput): TestOutput!
+}
+
+type Subscription {
+    testAdded: TestOutput
+}
