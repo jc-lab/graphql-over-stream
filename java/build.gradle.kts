@@ -2,8 +2,13 @@ plugins {
     id("java")
 }
 
-group = "kr.jclab.graphql"
-version = Version.PROJECT
+val projectGroup = "kr.jclab.graphql"
+val projectVersion = Version.PROJECT
+
+allprojects {
+    group = projectGroup
+    version = Version.PROJECT
+}
 
 repositories {
     mavenCentral()
