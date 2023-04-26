@@ -172,7 +172,7 @@ public class GraphQlSessionHandler {
         }
     }
 
-    private DefaultExecutionGraphQlRequest buildRequest(GraphQlWebSocketMessage message) {
+    protected DefaultExecutionGraphQlRequest buildRequest(GraphQlWebSocketMessage message) {
         String id = message.getId();
         Map<String, Object> body = message.getPayload();
         return new DefaultExecutionGraphQlRequest(
